@@ -2075,3 +2075,4 @@ Unconditional classes:
 2026-08-15T18:32:04.215+05:30 DEBUG 2836 --- [beneficiary-system-v2] [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
 2026-08-15T18:32:04.215+05:30 DEBUG 2836 --- [beneficiary-system-v2] [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.beneficiary_system_v2.workflow.BeneficiaryWorkflow@54c3a708]
 2026-08-15T18:32:04.216+05:30 DEBUG 2836 --- [beneficiary-system-v2] [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+^C

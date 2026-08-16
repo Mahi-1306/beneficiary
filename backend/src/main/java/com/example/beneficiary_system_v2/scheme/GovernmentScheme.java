@@ -32,7 +32,9 @@ public class GovernmentScheme {
     @Column(nullable = false, unique = true)
     private String schemeName;
 
+    private String slug;
     private String category;
+    private String level;
 
     @Lob
     private String description;
@@ -45,6 +47,9 @@ public class GovernmentScheme {
 
     @Lob
     private String documentsRequired;
+
+    @Lob
+    private String application;
 
     private String officialLink;
     private String applicationLink;
@@ -60,4 +65,12 @@ public class GovernmentScheme {
     private Boolean active;
     private Long recommendationCount;
     private LocalDateTime lastUpdated;
+
+    @Column(nullable = false)
+    @Builder.Default
+    private String source = "MANUAL";
+
+    @Column(nullable = false)
+    @Builder.Default
+    private Boolean verified = true;
 }

@@ -135,14 +135,16 @@ public class BeneficiaryWorkflowController {
                 ? List.of()
                 : Arrays.stream(scheme.getDocumentsRequired().split(","))
                         .map(String::trim).filter(s -> !s.isEmpty()).toList();
+        String howToApply = (scheme.getApplication() == null || scheme.getApplication().isBlank())
+                ? "Visit the official portal or contact the relevant department office for application instructions."
+                : scheme.getApplication();
+
         return new ApplicationInfoResponse(
                 workflowId,
                 scheme.getSchemeName(),
                 scheme.getBenefits(),
                 scheme.getEligibility(),
-                "Visit the official portal at " + scheme.getApplicationLink()
-                        + " to submit your application online, or contact the " + scheme.getDepartment()
-                        + " office for offline assistance.",
+                howToApply,
                 docs,
                 scheme.getOfficialLink(),
                 scheme.getApplicationLink()
