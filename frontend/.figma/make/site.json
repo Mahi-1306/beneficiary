@@ -1,0 +1,10 @@
+{
+  "description": "Effortlessly manage and track Markdown files with this intuitive web app designed for developers and writers, enhancing collaboration and productivity.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
